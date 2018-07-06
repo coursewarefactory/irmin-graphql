@@ -11,6 +11,7 @@ depends: [
   "jbuilder" {build}
   "rresult"
   "irmin-unix"
+  "cmdliner"
   "alcotest" {test}
 ]
 available: [
