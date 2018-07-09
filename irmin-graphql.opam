@@ -10,6 +10,8 @@ build-test: [["jbuilder" "runtest" "-p" name "-j" jobs]]
 depends: [
   "jbuilder" {build}
   "rresult"
+  "irmin-unix"
+  "cmdliner"
   "alcotest" {test}
 ]
 available: [
