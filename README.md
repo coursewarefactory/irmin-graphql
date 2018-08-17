@@ -5,7 +5,7 @@ This package provides a GraphQL API on top of a [Irmin](https://github.com/mirag
 Dependencies:
 
 - `irmin`
-- `graphql` pinned to `https://github.com/andreas/ocaml-graphql-server.git#abstract-types`
+- `graphql` pinned to `https://github.com/andreas/ocaml-graphql-server.git`
 - `graphql-lwt`
 
 
