@@ -4,7 +4,7 @@ This package provides a GraphQL API on top of a [Irmin](https://github.com/mirag
 
 Dependencies:
 
-- `irmin`
+- `irmin-unix`
 - `graphql` (version 0.7 or greater)
 - `graphql-lwt`
 
