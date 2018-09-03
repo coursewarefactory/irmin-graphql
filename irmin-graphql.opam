@@ -1,17 +1,19 @@
 opam-version: "1.2"
 maintainer: "Andreas Garnaes <andreas.garnaes@gmail.com>"
 authors: "Andreas Garnaes <andreas.garnaes@gmail.com>"
-homepage: "https://github.com/andreas/ocaml-dataloader"
-doc: "https://andreas.github.io/ocaml-dataloader/"
-bug-reports: "https://github.com/andreas/ocaml-dataloader/issues"
-dev-repo: "https://github.com/andreas/ocaml-dataloader.git"
+homepage: "https://github.com/andreas/ocaml-graphql"
+doc: "https://andreas.github.io/ocaml-graphql/"
+bug-reports: "https://github.com/andreas/ocaml-graphql/issues"
+dev-repo: "https://github.com/andreas/ocaml-graphql.git"
 build: [["jbuilder" "build" "-p" name "-j" jobs]]
 build-test: [["jbuilder" "runtest" "-p" name "-j" jobs]]
 depends: [
-  "jbuilder" {build}
+  "dune" {build}
   "rresult"
   "irmin-unix"
   "cmdliner"
+  "graphql" {>= "0.7"}
+  "graphql-lwt"
   "alcotest" {test}
 ]
 available: [

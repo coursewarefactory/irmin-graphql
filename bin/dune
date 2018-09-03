@@ -1,0 +1,5 @@
+(executable
+  (name        main)
+  (public_name irmin-graphql)
+  (package     irmin-graphql)
+  (libraries   irmin-graphql cmdliner irmin-unix))

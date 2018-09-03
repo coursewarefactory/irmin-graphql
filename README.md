@@ -1,20 +1,27 @@
 # irmin-graphql
 
-This package provides a GraphQL API on top of a [Irmin](https://github.com/mirage/irmin) store. It's still very early and experimental.
+This package provides a GraphQL API on top of a [Irmin](https://github.com/mirage/irmin) store.
 
 Dependencies:
 
-- `irmin`
-- `graphql` pinned to `https://github.com/andreas/ocaml-graphql-server.git#abstract-types`
+- `irmin-unix`
+- `graphql` (version 0.7 or greater)
 - `graphql-lwt`
 
+## Installation
 
-## Git Example
+```shell
+$ opam pin add irmin-graphql https://github.com/andreas/irmin-graphql
+```
+
+## Command-line example
 
 To expose a git repo over GraphQL, clone the repo, then run the following:
 
 ```
-jbuilder exec git-graphql /path/to/git-repo
+dune exec irmin-graphql -s git --root /path/to/git-repo 8080
 ```
 
 Now open [http://localhost:8080/graphql](http://localhost:8080/graphql) and enjoy!
+
+For more information about using the command line see the output of `irmin-graphql --help`
